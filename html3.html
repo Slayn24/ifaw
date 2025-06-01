@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <title>Donate | IFAW</title>
     <style>
+            :root {
+            --primary: #007cf9;
+            --accent: #0396A6;
+            --dark: #151515;
+            --light: #f4f4f4;
+            --white: #fff;
+            --radius: 18px;
+            --shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
         body, html {
             height: 100%;
             margin: 0;
             font-family: 'Inter', Arial, sans-serif;
+        }
+        body {
+            overflow-x: hidden;
+            
         }
         .pimg-bg {
             background: url('img/bio.jpg') center center/cover no-repeat;
@@ -226,9 +239,64 @@
                 display: none;
             }
         }
+
+
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(21,21,21,0.92);
+            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.2rem 2vw;
+        }
+        .logoTitle {
+            font-family: 'Graphik', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--primary);
+            letter-spacing: -2px;
+        }
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logoTitle" style="font-family:'Graphik',Arial,sans-serif;font-weight:900;font-size:2.5rem;letter-spacing:-2px;text-decoration:none;">
+                if<span style="color:#007cf9;border-bottom:4px solid #007cf9;padding-bottom:0;">aw</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#donate">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="pimg-bg"></div>
     <div class="donate-overlay"></div>
     <div class="donate-container">
