@@ -57,11 +57,18 @@
             height: 100vh;
             width: 100vw;
         }
-        .donate-left, .donate-right {
-            background: #fff;
+        .donate-left {
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 20px;
             margin-top: 40px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .donate-right {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            margin-top: 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            padding-top: 50;
         }
         .donate-left {
             width: 400px;
@@ -104,16 +111,18 @@
         }
         .donate-right {
             width: 350px;
-            padding: 36px 32px 32px 32px;
+            height: 450px;
+            padding: 80px 40px 40px 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
         }
         .donate-right h3 {
+            color: #fff;
             font-size: 1.3rem;
             font-weight: 700;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -181,9 +190,10 @@
         }
         .donate-custom span {
             font-size: 1.1rem;
-            color: #888;
+            color: #ffffff;
         }
         .donate-checkbox {
+            color: #fff;
             margin-bottom: 18px;
             font-size: 0.98rem;
             display: flex;
@@ -291,6 +301,7 @@
             </a>
             <nav>
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="index.html#donate">Donate</a></li>
                 </ul>
@@ -309,7 +320,7 @@
                     Animals worldwide face threats like poaching, trafficking, ocean hazards, disasters, and habitat loss. Iconic species, critical to our planet's health, are endangered.
                 </p>
                 <p>
-                    For over 50 years, IFAW has rescued, rehabilitated, and released animals while restoring their habitats. <b>Help us continue our life-saving work. Donate now &gt;&gt;</b>
+                    For over 50 years, IFAW has rescued, rehabilitated, and released animals while restoring their habitats. <b>Help us continue our life-saving work. Donate now</b>
                 </p>
             </div>
         </div>
@@ -340,10 +351,7 @@
                 Dedicate this donation
             </label>
             <button class="donate-btn">Donate</button>
-            <div class="donate-arrow-note">
-                <svg width="60" height="60"><path d="M60,10 Q30,30 60,50" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/><defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="4" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#000"/></marker></defs></svg>
-                The most<br>effective way<br>to support<br>the cause
-            </div>
+            
         </div>
     </div>
     <script>
