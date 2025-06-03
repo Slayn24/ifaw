@@ -96,7 +96,7 @@
             letter-spacing: -2px;
         }
         .donate-left .logoTitle span {
-            color: #007cf9;
+            color: #222;
             border-bottom: 4px solid #007cf9;
             padding-bottom: 0;
         }
@@ -111,7 +111,7 @@
         }
         .donate-right {
             width: 350px;
-            height: 450px;
+            height: 460px;
             padding: 80px 40px 40px 40px;
             display: flex;
             flex-direction: column;
@@ -134,7 +134,7 @@
         .donate-tabs {
             display: flex;
             gap: 10px;
-            margin-bottom: 18px;
+            margin-bottom: 28px;
         }
         .donate-tab {
             padding: 7px 22px;
@@ -152,13 +152,19 @@
             color: #007cf9;
         }
         .donate-amounts {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 14px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 14px 10px;
+            margin-bottom: 60px;
+            width: 100%;
+            max-width: 330px;
+            justify-items: stretch;
         }
         .donate-amount-btn {
-            padding: 10px 20px;
+            width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+            padding: 14px 0;
             border-radius: 10px;
             border: 2px solid #e0e0e0;
             background: #f7f7f7;
@@ -167,11 +173,7 @@
             color: #222;
             font-size: 1rem;
             transition: border 0.2s, background 0.2s;
-        }
-        .donate-amount-btn.active, .donate-amount-btn:focus {
-            border: 2px solid #007cf9;
-            background: #eaf4ff;
-            color: #007cf9;
+            text-align: center;
         }
         .donate-custom {
             display: flex;
@@ -297,14 +299,14 @@
     <header>
         <div class="navbar">
             <a href="index.html" class="logoTitle" style="font-family:'Graphik',Arial,sans-serif;font-weight:900;font-size:2.5rem;letter-spacing:-2px;text-decoration:none;">
-                if<span style="color:#007cf9;border-bottom:4px solid #007cf9;padding-bottom:0;">aw</span>
+                if<span style="color:#ffffff;border-bottom:4px solid #007cf9;padding-bottom:0;">aw</span>
             </a>
             <nav>
                 <ul>
-                    <li><a href="index.html#animals">Animals</a></li>
-                    <li><a href="index.html#donate">Get involved</a></li>
-                    <li><a href="index.html#home">Explore</a></li>
-                    <li><a href="index.html#biodiversity">Our work</a></li>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Get involved</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Our work</a></li>
                     <li><a href="index.html#about">About IFAW</a></li>
                     <li><a href="index.html#donate">Donate</a></li>
                 </ul>
@@ -317,7 +319,7 @@
         <div class="donate-left">
             <img src="img/biodiversity.jpg" alt="Elephants">
             <div class="donate-left-content">
-                <div class="logoTitle">if<span>aw</span></div>
+                <span style="font-family:'Graphik',Arial,sans-serif;font-weight:900;font-size:2.5rem;letter-spacing:-2px;">if<span style="color:#007cf9;border-bottom:4px solid #222;padding-bottom:0;">aw</span></span>
                 <h2>Help animals and people thrive together</h2>
                 <p>
                     Animals worldwide face threats like poaching, trafficking, ocean hazards, disasters, and habitat loss. Iconic species, critical to our planet's health, are endangered.
